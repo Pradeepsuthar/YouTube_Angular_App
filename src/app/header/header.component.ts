@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   title = 'YouTube';
+  logo = "assets/logo/logo.png"
   notification_count = 30;
 
   constructor() { }

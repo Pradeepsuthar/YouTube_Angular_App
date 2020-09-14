@@ -9,6 +9,12 @@ import { MenulistleftComponent } from './menulistleft/menulistleft.component';
 import { BodycontentrightComponent } from './bodycontentright/bodycontentright.component';
 import { SettingsComponent } from './settings/settings.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './services/api-config.service';
+
+// import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +26,11 @@ import { SettingsComponent } from './settings/settings.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    // Ng2SearchPipeModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
